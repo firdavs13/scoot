@@ -5,6 +5,10 @@
     background-position: 0px 200px;
     background-size:  70% auto ;
 
+    &__line-img {
+        display: none;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -94,10 +98,19 @@ only screen and (                min-resolution: 2dppx) {
 
 @media only screen and (max-width: 710px) {
     .about {
-        background-image: url("../images/about-bg-media.png");
-        background-repeat: no-repeat;
-        background-position: 22% top  ;
-        background-size: auto  75% ;
+
+        &__line {
+            position: relative;
+        }
+
+        &__line-img {
+            display: inline-block;
+            position: absolute;
+            left: 40px;
+            top: -170px;
+            height: 600px;
+            z-index: -99;
+        }
 
         &__list {
             display: flex;
@@ -135,35 +148,19 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 
-@media only screen and (max-width: 600px) {
-    .about {
-        background-position: 19% top;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    .about {
-        background-position: 17% top;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .about {
-        padding: 130px 0px 100px;
-        background-size: auto 95%;
-        background-position: 15% top;
-    }
-}
-
 @media only screen and (max-width: 450px) {
     .about {
         background-image: none;
+
+        &__line-img {
+            display: none;
+        }
 
         &__item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 320px;
+            max-width: 350px;
         }
 
         &__item-words {
@@ -178,13 +175,15 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 @media only screen and (max-width: 380px) {
-    &__item-words{
-        width: 100%;
-        max-width: 28px;
-    }
+    .about {
+        &__item-words{
+            width: 100%;
+            max-width: 300px;
+        }
 
-    &__item {
-        width: 100%;
-        max-width: 28px;
+        &__item {
+            width: 100%;
+            max-width: 300px;
+        }
     }
 }
