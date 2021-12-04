@@ -1,0 +1,112 @@
+.card {
+    background: #495567;
+    background-image: url("../../images/ovals.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 88px 0px 116px;
+    }
+
+    &__heading {
+        max-width: 350px;
+        margin: 0;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2px;
+        color: #FFFFFF;
+    }
+
+    &__elements {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item + &__item {
+        margin-left: 17px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        text-decoration: none;
+        background: #E5ECF4;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    &__item-img {
+        margin-right: 12px;
+    }
+
+    &__item-words {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #495567;
+    }
+
+    &__item-desc {
+        margin: 0px;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.5px;
+    }
+
+    &__item-heading {
+        margin: 0px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.9px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .card {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__heading {
+            max-width: 457px;
+            margin: 0px 0px 40px;
+           text-align: center;
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        &__heading {
+            max-width: 4000px;
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .card {
+        &__elements {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item + &__item {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+    }
+}
