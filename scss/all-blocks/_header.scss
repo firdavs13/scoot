@@ -1,0 +1,59 @@
+.header {
+
+    &__wrapper {
+        padding: 22px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        margin-left: auto;
+    }
+
+    &__hamburger {
+        display: none;
+        width: 20px;
+        height: 20px;
+        background-image: url("../images/bars-solid.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__logo {
+        flex-shrink: 0;
+    }
+
+    &__logo:hover {
+        opacity: 0.8;
+    }
+
+    &__logo:active {
+        opacity: 0.6;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .header{
+        position: relative;
+
+        &__wrapper {
+            padding: 22px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__button {
+            margin: 0;
+        }
+
+        &__hamburger {
+          display: inline-block;
+        }
+      }
+
+      .header--open .header__hamburger {
+        background-image: url("../images/times-solid.svg");
+      }
+}
