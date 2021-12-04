@@ -1,5 +1,9 @@
 .sitenav {
+    width: 100%;
     margin-left: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     &__list {
         display: flex;
@@ -7,6 +11,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        // margin-right: auto;
     }
 
     &__item + &__item {
@@ -60,5 +65,10 @@
         .header--open &__link {
           color: white;
         }
+
+        .header--open &__button {
+            width: auto;
+            margin-bottom: 15px;
+          }
     }
 }

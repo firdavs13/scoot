@@ -1,5 +1,4 @@
 .hero {
-    padding: 0px 0px 60px;
     background-image: url("../images/hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,4 +169,21 @@ only screen and (                min-resolution: 2dppx) {
             margin-bottom: 25px;
         }
     }
+}
+
+@media only screen and (max-width: 340px) {
+  .hero {
+
+    &__wrapper {
+        padding: 100px 0px 150px;
+    }
+    &__heading {
+        font-size: 38px;
+    }
+
+    &__desc {
+        max-width: 100%;
+        line-height: 20px;
+    }
+  }
 }
