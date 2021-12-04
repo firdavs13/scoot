@@ -46,6 +46,11 @@
           width: 100%;
           background: #495567;
           border-radius: 8px;
+          background-image: url("../../images/ovals.png");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: bottom;
+          border-radius: 15px;
         }
 
         .header--open &__list {
