@@ -19,6 +19,8 @@
                     <img class="header__logo-img" src="./images/header-logo-img.svg" alt="header logo img" width="108" height="29">
                 </a>
 
+                <!-- SITENAV -->
+
                 <nav class="sitenav">
                     <ul class="sitenav__list">
                         <li class="sitenav__item">
@@ -46,12 +48,15 @@
         <!-- HERO -->
 
         <section class="hero">
-            <div class="hero__main">
-                <div class="container hero__container">
-                    <div class="hero__wrapper">
-                        <h1 class="hero__heading">Scooter sharing made simple</h1>
-                        <p class="hero__desc">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
-                        <button class="button hero__button">Get Scootin</button>
+            <div class="container">
+                <div class="hero__wrapper">
+                    <h1 class="hero__heading">Scooter sharing made simple</h1>
+                    <p class="hero__desc">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+                    <button class="button hero__button">Get Scootin</button>
+                    <div class="hero__line">
+                        <img class="hero__line-img-desctop" src="./images/hero-bg-element.png" alt="" srcset="./images/hero-bg-element.png 1x , ./images/hero-bg-element@2x.png 2x">
+
+                        <img class="hero__line-img-table" src="./images/hero-bg-element-media.png" alt="" srcset="./images/hero-bg-element-media.png 1x , ./images/hero-bg-element-media@2x.png 2x">
                     </div>
                 </div>
             </div>
@@ -65,7 +70,7 @@
                     <ul class="about__list">
                         <li class="about__item">
                             <div class="about__line">
-                                <img class="about__line-img" src="./images/about-bg-media.png" alt="">
+                                <img class="about__line-img" src="./images/about-bg-media.svg" alt="">
                                 <img class="about__item-img" src="./images/about-item-img1.svg" alt="" width="96" height="96">
                             </div>
 
@@ -114,15 +119,18 @@
                                     <source
                                     type="image/webp"
                                     media="(max-width:375px)"
-                                    src="./images/office-item-image-mobile.webp"
                                     srcset="./images/office-item-image-mobile.webp 1x , ./images/office-item-image-mobile@2x.webp 2x"
                                     />
 
                                    <source
                                    type="image/webp"
-                                   src="images/office-item-img.webp"
                                    srcset="./images/office-item-img.webp 1x , images/office-item-img@2x.webp 2x" />
 
+                                   <!-- AVIF IMAGES -->
+
+                                   <source
+                                   type="image/avif"
+                                   srcset="./images/office-item-img.avif 1x , ./images/office-item-img@2x.avif 2x" />
 
                                     <!-- JPG IMAGES -->
 
@@ -147,15 +155,18 @@
                                     <source
                                     type="image/webp"
                                     media="(max-width:375px)"
-                                    src="./images/office-item-mobile-img-2.webp"
                                     srcset="./images/office-item-mobile-img-2.webp 1x , ./images/office-item-mobile-img-2@2x.webp 2x"
                                     />
 
                                    <source
                                    type="image/webp"
-                                   src="images/office-item-img-1.webp"
                                    srcset="./images/office-item-img-1.webp 1x , images/office-item-img-1@2x.webp 2x" />
 
+                                    <!-- AVIF IMAGES -->
+
+                                    <source
+                                    type="image/avif"
+                                    srcset="./images/office-item-img-1.avif 1x , ./images/office-item-img-1@2x.avif 2x" />
 
                                     <!-- JPG IMAGES -->
 
@@ -182,15 +193,19 @@
                                     <source
                                     type="image/webp"
                                     media="(max-width:375px)"
-                                    src="./images/office-item-mobile-img-3.webp"
                                     srcset="./images/office-item-mobile-img-3.webp 1x , ./images/office-item-mobile-img-3@2x.webp 2x"
                                     />
 
                                    <source
                                    type="image/webp"
-                                   src="images/office-itemimg-3.webp"
                                    srcset="./images/office-itemimg-3.webp 1x , images/office-itemimg-3@2x.webp 2x" />
 
+                                    <!-- AVIF IMAGES -->
+
+                                    <source
+                                    type="image/avif"
+                                    src="./images/office-itemimg-3.avif"
+                                    srcset="./images/office-itemimg-3.avif 1x , ./images/office-itemimg-3@2x.avif 2x" />
 
                                     <!-- JPG IMAGES -->
 
@@ -218,7 +233,7 @@
                     </div>
                     <div class="card__elements">
                         <a class="card__item" href="#">
-                            <img class="card__item-img" src="./images/apple-icon.svg" alt="" width="24px" height="28">
+                            <img class="card__item-img" src="./images/apple-icon.svg" alt="" width="24" height="28">
                             <div class="card__item-words">
                                 <p class="card__item-desc">Available on the</p>
                                 <h6 class="card__item-heading">AppStore</h6>

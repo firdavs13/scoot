@@ -1,6 +1,6 @@
 .card {
-    background: #495567;
-    background-image: url("../../images/ovals.png");
+    background: $main-color;
+    background-image: url("../images/ovals.png");
     background-repeat: no-repeat;
     background-position: right bottom;
 
@@ -17,7 +17,7 @@
         font-size: 48px;
         line-height: 48px;
         letter-spacing: -2px;
-        color: #FFFFFF;
+        color: $supplement-color;
     }
 
     &__elements {
@@ -49,7 +49,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: #495567;
+        color: $main-color;
     }
 
     &__item-desc {
@@ -67,6 +67,24 @@
         letter-spacing: -0.9px;
     }
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+    .card {
+        background-image: url("../images/ovals@2x.png");
+    }
+
+}
+
+// MEDIA !!!
+
+
 
 @media only screen and (max-width: 730px) {
     .card {

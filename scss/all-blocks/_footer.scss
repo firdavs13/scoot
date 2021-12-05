@@ -40,7 +40,7 @@
         font-weight: bold;
         font-size: 15px;
         line-height: 25px;
-        color: #939CAA;
+        color: $helper-color;
     }
 
     &__link:hover {
@@ -72,13 +72,16 @@
     }
 
     &__icon:hover {
-        color: white;
+        color: $supplement-color;
     }
 
     &__icon:active {
         opacity: 0.6;
     }
 }
+
+// MEDIA !!!
+
 
 @media only screen and (max-width: 600px) {
     .footer {
